@@ -282,6 +282,7 @@ form input {
   color: #6b778c;
   border: 1px solid #d0d9d4;
   width: 100%;
+  padding-left: 0.5rem;
 }
 
 form textarea {
@@ -293,6 +294,7 @@ form textarea {
   color: #6b778c;
   border: 1px solid #d0d9d4;
   width: 100%;
+  padding-left: 0.5rem;
 }
 
 /* Hover Section */
