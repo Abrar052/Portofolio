@@ -8,22 +8,53 @@ body {
   padding: 0;
 }
 
-.nav-bar {
+.nav-mobile {
   display: flex;
   justify-content: space-between;
-  list-style: none;
-  text-decoration: none;
-  font-family: 'inter', sans-serif;
-  padding: 0.625rem 1.25rem;
+  padding: 1rem 0;
 }
 
-nav ul li a {
+.brand a{
   text-decoration: none;
   color: #172b4d;
 }
 
+.navToggle {
+  border: transparent;
+  background:transparent;
+  color: #505f79;
+  font-size: 1.5rem;
+}
+
+
+nav ul li a {
+  text-decoration: none;
+  color: #172b4d;
+  font-family: 'inter', sans-serif;
+  font-style: normal;
+  font-size: 2rem;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  margin: 1rem 0;
+}
+
+.nav-bar{
+  height: 0;
+  overflow: hidden;
+}
+
 .nav-desktop {
-  display: none;
+  list-style: none;
+  
+}
+
+.nav-open {
+  height: 100vh;
+}
+
+.nav-close {
+  height: 0;
 }
 
 .section-1 {
@@ -345,25 +376,29 @@ nav ul li a:hover {
   }
 
   nav {
-    width: 80%;
+    width: 100%;
     display: flex;
     justify-content: center;
   }
 
-  .nav-mobile {
+  .brand, .navToggle {
     display: none;
   }
 
+
   .nav-bar {
-    list-style: none;
-    padding: 0.625rem 1.25rem;
+    height: auto;
+    display: flex;
+    font-family: 'inter', sans-serif;
     gap: 20px;
+    
   }
 
   nav ul li a {
     text-decoration: none;
     font-family: 'inter', sans-serif;
     font-style: normal;
+    font-size: 1rem;
     font-weight: 700;
     color: #505f79;
     gap: 2rem;
