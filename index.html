@@ -10,15 +10,23 @@
 </head>
 <body>
     <div class="start">
-        <nav>
-            <ul class="nav-bar">
-                <li class="nav-desktop" id="navPortfolio"><a href="#projectTitle">Portfolio</a></li>
-                <li class="nav-desktop" id="navAbout"><a href="#about">About</a></li>
-                <li class="nav-desktop" id="navContact"><a href="#contact">Contact</a></li>
-                <li class="nav-mobile" id="home"><a href="#section-1">Welcome</a></li>
-                <li class="nav-mobile" id="navBurger"><a href="#"><i class="fa fa-navicon"></i></a></li>
-              </ul>
-        </nav>
+        <div class="nav-container">
+            <div class="navMenu">
+                <div class="nav-mobile">
+                    <h2 class="brand"><a href="#section-1">Welcome</a></h2>
+                    <button class="navToggle" id="navToggle"><i class="fas fa-bars"></i></button>
+                </div>
+                <nav>
+                    <ul class="nav-bar" id="nav-desktop">
+                        <li class="nav-desktop" id="navPortfolio"><a href="#projectTitle">Portfolio</a></li>
+                        <li class="nav-desktop" id="navAbout"><a href="#about">About</a></li>
+                        <li class="nav-desktop" id="navContact"><a href="#contact">Contact</a></li>
+                      </ul>
+                </nav>
+            </div>
+        </div>
+        
+        
     
     
         <section id="section-1" class="section-1">
@@ -235,5 +243,6 @@
     <script src="https://kit.fontawesome.com/4e5bc16f7d.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400&display=swap" rel="stylesheet"/>
     <link href="https://fonts.googleapis.com/css2?family=Crete+Round&family=Inter:wght@100;200;300;400&display=swap" rel="stylesheet"/>
+    <script src="js/index.js"></script>
 </body>
 </html>
