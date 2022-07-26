@@ -8,22 +8,50 @@ body {
   padding: 0;
 }
 
-.nav-bar {
+.nav-mobile {
   display: flex;
   justify-content: space-between;
-  list-style: none;
-  text-decoration: none;
-  font-family: 'inter', sans-serif;
-  padding: 0.625rem 1.25rem;
+  padding: 1rem 0;
 }
 
 nav ul li a {
   text-decoration: none;
   color: #172b4d;
+  font-family: 'inter', sans-serif;
+  font-style: normal;
+  font-size: 2rem;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  margin: 0.5rem 0;
+}
+
+.brand a {
+  text-decoration: none;
+  color: #505f79;
+  padding-left: 1.5rem;
+}
+
+.navToggle {
+  border: transparent;
+  background: transparent;
+  color: #505f79;
+  font-size: 1.5rem;
+  cursor: pointer;
+  padding-right: 1.5rem;
+}
+
+.nav-bar {
+  height: 0;
+  overflow: hidden;
 }
 
 .nav-desktop {
-  display: none;
+  list-style: none;
+}
+
+.nav-open {
+  height: 100vh;
 }
 
 .section-1 {
@@ -33,8 +61,8 @@ nav ul li a {
 .section-1 h1 {
   font-family: 'inter', sans-serif;
   font-style: normal;
-  font-weight: 700;
-  font-size: 40px;
+  font-weight: 800;
+  font-size: 48px;
   line-height: 52px;
   text-align: center;
   color: #172b4d;
@@ -65,7 +93,7 @@ nav ul li a {
   justify-content: center;
   list-style: none;
   margin: 0;
-  padding: 0 0 0.5rem 0;
+  padding: 1rem 0 0.5rem 0;
   gap: 1rem;
 }
 
@@ -127,7 +155,7 @@ nav ul li a {
   font-family: 'inter', sans-serif;
   font-style: normal;
   font-weight: 700;
-  font-size: 30;
+  font-size: 30px;
   text-align: center;
   color: #172b4d;
 }
@@ -303,6 +331,14 @@ nav ul li a:hover {
   color: #36b37f;
 }
 
+.brand a:hover {
+  color: #36b37f;
+}
+
+.navToggle:hover {
+  color: #36b37f;
+}
+
 .contact li a:hover {
   color: #36b37f;
 }
@@ -345,28 +381,33 @@ nav ul li a:hover {
   }
 
   nav {
-    width: 80%;
+    width: 100%;
     display: flex;
     justify-content: center;
   }
 
-  .nav-mobile {
+  .brand,
+  .navToggle {
     display: none;
   }
 
   .nav-bar {
-    list-style: none;
-    padding: 0.625rem 1.25rem;
+    height: auto;
+    display: flex;
+    font-family: 'inter', sans-serif;
     gap: 20px;
+    padding-left: 0%;
   }
 
   nav ul li a {
     text-decoration: none;
     font-family: 'inter', sans-serif;
     font-style: normal;
+    font-size: 1rem;
     font-weight: 700;
     color: #505f79;
-    gap: 2rem;
+    margin: 0%;
+    padding: 0%;
   }
 
   .nav-desktop {
@@ -374,15 +415,10 @@ nav ul li a:hover {
   }
 
   .section-1 {
-    width: 80%;
+    width: 59%;
     padding-top: 6rem;
     display: flex;
     justify-content: center;
-  }
-
-  .welcome {
-    width: 80%;
-    padding: 4rem auto;
   }
 
   hr {
