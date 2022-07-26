@@ -5,6 +5,9 @@ const nav = document.querySelector("#nav-desktop");
 
 navToggle.addEventListener("click", () => {
     nav.classList.toggle('nav-open');
-    nav.classList.toggle('nav-closed');
 
 })
+
+document.querySelectorAll(".nav-link").forEach(n => nav.addEventListener("click", () => {
+    nav.classList.remove('nav-open');
+}))
