@@ -93,7 +93,7 @@ nav ul li a {
   justify-content: center;
   list-style: none;
   margin: 0;
-  padding: 0 0 0.5rem 0;
+  padding: 1rem 0 0.5rem 0;
   gap: 1rem;
 }
 
@@ -415,7 +415,7 @@ nav ul li a:hover {
   }
 
   .section-1 {
-    width: 80%;
+    width: 59%;
     padding-top: 6rem;
     display: flex;
     justify-content: center;
