@@ -10,7 +10,7 @@ body {
 
 .nav-mobile {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   padding: 1rem 0;
 }
 
@@ -22,19 +22,18 @@ nav ul li a {
   font-size: 2rem;
   font-weight: 700;
   display: flex;
-  justify-content: center;
-  margin: 0.5rem 0;
+  margin: 3rem 0;
 }
 
 .brand a {
   text-decoration: none;
   color: #505f79;
-  padding-left: 1.5rem;
+  padding-right: 340px;
 }
 
 .navToggle {
   border: transparent;
-  background: transparent;
+  background: white;
   color: #505f79;
   font-size: 1.5rem;
   cursor: pointer;
@@ -52,6 +51,9 @@ nav ul li a {
 
 .nav-open {
   height: 100vh;
+  border-bottom: solid #505f79;
+  border-radius: 10px;
+  border-width: 10px;
 }
 
 .section-1 {
@@ -328,14 +330,6 @@ form textarea {
 /* Hover Section */
 
 nav ul li a:hover {
-  color: #36b37f;
-}
-
-.brand a:hover {
-  color: #36b37f;
-}
-
-.navToggle:hover {
   color: #36b37f;
 }
 
