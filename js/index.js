@@ -91,7 +91,7 @@ window.addEventListener('DOMContentLoaded', () => {
               See Live <span><i class='far fa-arrow-alt-circle-up'></i></span>
               </a></button>
               <button class='check-source'>
-              <a href=${modalData.sourceUrl} class='github-link'>
+              <a href=${modalData.sourseUrl} class='github-link'>
                 See source <span<i class='fab fa-github'></i></i></span>
               </a>
               </button>
@@ -114,7 +114,7 @@ window.addEventListener('DOMContentLoaded', () => {
                 </a>
               </button>
               <button class='check-source'>
-                <a href=${modalData.sourceUrl} class='github-link'>
+                <a href=${modalData.sourseUrl} class='github-link'>
                   See source <span<i class='fab fa-github'></i></i></span>
                 </a>
               </button>
